@@ -12,7 +12,7 @@ body {
 .header-container{
   height: 100vh;
   width: 100vw;
-  background-color: rgb(226, 191, 35);
+ background-color: cyan;
   background-image: url(https://i.postimg.cc/wvd9LvK4/Dise-o-sin-t-tulo.png);
   background-repeat: no-repeat;
   background-position:right ;
@@ -202,28 +202,66 @@ h1{
 }
 
 .card{
-  width: 300px;
+  width: 400px;
   height: 300px;
-  border-radius: 100%;
+  border-radius:100px;
+  margin: 3rem 0 0 0;
+  display: flex;
+    align-items: center;
+  justify-content: center;
+background: url(https://i.postimg.cc/L801cNk4/tributo.png);
+  background-color: rgb(13, 14, 14);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: #3e91d4;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+ 
+}
+.card1{
+  width: 400px;
+  height: 300px;
+  border-radius:100px;
   margin: 3rem 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
-  background-image: url(https://i.postimg.cc/hjVQ7nkh/esteban-creencia.png);
-    background-position: center;
+  background: url(https://i.postimg.cc/5fpq5mCR/formulario-fan-de-animes.png);
+  background-color: rgb(6, 212, 212);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.5);
-  color: #1E1E2A;
+  color: #3e91d4;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
- 
+.card2{
+  width: 400px;
+  height: 300px;
+  border-radius:100px;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url(https://i.postimg.cc/hjVQ7nkh/esteban-creencia.png);
+  background-color: rgb(13, 14, 14);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: #3e91d4;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+
 .card-text{
   width: 40%;
   letter-spacing: 1px;
-  color: rgb(109, 109, 109);
+  color: #1E1E2A
 
 }
 
@@ -234,6 +272,7 @@ h1{
   justify-content: center;
   align-items: center;
   position: relative;
+  
   }
 
   .card-wrapper::before{
@@ -246,6 +285,7 @@ h1{
     border: 1px solid #ffffff;
     opacity: 0;
     transition: 0.5s ease-in-out;
+    
   }
   .card-wrapper h2 {
     font-size: 40px;
@@ -256,14 +296,20 @@ h1{
   }
 
   .card-wrapper p {
-
     font-size: 0;
     visibility: visible;
     opacity: 0;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
-  }
+      
+    }
+
+    .card-wrapper a{
+      text-decoration: none;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    }
   .card:hover{
     filter: unset;
   }
@@ -274,11 +320,45 @@ h1{
   }
 
   .card:hover > .card-wrapper p{
-    opacity: 1;
+    opacity: 0.9;
     visibility: visible;
-    font-size: 14px;
+    font-size: 30px;
+    color: #020101;
+   
   }
 
+  .card1:hover{
+    filter: unset;
+  }
+  .card1:hover > .card-wrapper::before{
+    height: 250px;
+    width: 250px;
+    opacity: 1;
+  }
+
+  .card1:hover > .card-wrapper p{
+    opacity: 0.9;
+    visibility: visible;
+    font-size: 30px;
+    color: #020101;
+   
+  }
+  .card2:hover{
+    filter: unset;
+  }
+  .card2:hover > .card-wrapper::before{
+    height: 250px;
+    width: 250px;
+    opacity: 1;
+  }
+
+  .card2:hover > .card-wrapper p{
+    opacity: 0.9;
+    visibility: visible;
+    font-size: 30px;
+    color: #020101;
+   
+  }
   /* FOOTER*/
 
   .footer{
@@ -290,3 +370,4 @@ h1{
     justify-content: center;
     color: #1E1E2A;
   }
+
