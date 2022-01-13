@@ -1,4 +1,13 @@
 /* Variables */
+@font-face {
+  font-family: "raleway";
+  src: url("../raleway.ttf");
+}
+
+* {
+  font-family: "raleway";
+}
+
 :root {
     --main-color: #3f4bf8;
     --primary-color: #1ef7ec;
